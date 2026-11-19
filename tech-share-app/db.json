@@ -1,0 +1,18 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "React Hooksの完全理解",
+      "content": "## useStateとは\n状態を管理するためのフックです。\n\n## useEffectとは\n副作用を扱うためのフックです。API通信などで使います。\n\n```javascript\nconsole.log('Hello World');\n```",
+      "author": "Tech Taro",
+      "createdAt": "2026-05-14"
+    },
+    {
+      "id": "2",
+      "title": "Tailwind CSSで爆速コーディング",
+      "content": "Tailwind CSSを使えば、HTML (JSX) から離れることなくスタイリングが完結します。\n\n- ユーティリティファースト\n- レスポンシブ対応が簡単\n- クラス名を考える手間が省ける",
+      "author": "Front Engineer",
+      "createdAt": "2026-05-15"
+    }
+  ]
+}
