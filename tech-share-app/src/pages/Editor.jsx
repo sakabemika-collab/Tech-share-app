@@ -19,7 +19,7 @@ export default function Editor() {
     }
 
     if (isEditMode) {
-      fetch(`http://localhost:3000/articles/${id}`)
+      fetch(`${import.meta.env.VITE_API_URL}/articles/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setTitle(data.title);
@@ -40,8 +40,8 @@ export default function Editor() {
     };
 
     const url = isEditMode
-      ? `http://localhost:3000/articles/${id}`
-      : 'http://localhost:3000/articles';
+  ? `${import.meta.env.VITE_API_URL}/articles/${id}`
+  : `${import.meta.env.VITE_API_URL}/articles`;
     const method = isEditMode ? 'PATCH' : 'POST';
 
     await fetch(url, {
