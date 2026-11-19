@@ -17,7 +17,7 @@ export default function Article() {
 
   const handleDelete = async () => {
     if (!window.confirm('この記事を削除しますか?')) return;
-    await fetch(`${import.meta.env.VITE_API_URL}/articles/${id}`), { method: 'DELETE' });
+    await fetch(`${import.meta.env.VITE_API_URL}/articles/${id}`, { method: 'DELETE' });
     navigate('/');
   };
 
